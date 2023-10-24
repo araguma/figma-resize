@@ -4,6 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resize</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                text-align: center;
+                margin: 0px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0px;
+            }
+            label {
+                margin-bottom: 8px;
+            }
+            input {
+                width: 100%;
+                max-width: 240px;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 16px;
+            }
+            input[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
         <script>
             function handleSubmit() {
                 parent.postMessage({
@@ -20,7 +54,7 @@
     </head>
     <body>
         <form onsubmit="handleSubmit()">
-            <label for="size">Container Size</label>
+            <label for="size">Enter Size</label>
             <input type="number" min="1">
             <input type="submit" value="Resize">
         </form>
