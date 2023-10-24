@@ -1,0 +1,30 @@
+{
+    "name": "figma-resize",
+    "version": "1.0.0",
+    "description": "Figma plugin for resizing nodes",
+    "keywords": [
+        "figma",
+        "plugin",
+        "resize"
+    ],
+    "homepage": "https://github.com/araguma/figma-resize#readme",
+    "bugs": {
+        "url": "https://github.com/araguma/figma-resize/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/araguma/figma-resize.git"
+    },
+    "license": "MIT",
+    "author": "araguma",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tsc && npm run copy",
+        "copy": "npx ncp src/manifest.json dist/manifest.json && npx ncp src/ui.html dist/ui.html"
+    },
+    "devDependencies": {
+        "@figma/plugin-typings": "^1.79.0",
+        "ncp": "^2.0.0",
+        "typescript": "^5.2.2"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "id": "resize",
+    "name": "Resize",
+    "api": "1.0.0",
+    "ui": "ui.html",
+    "main": "main.js",
+    "editorType": [
+        "figma",
+        "figjam"
+    ],
+    "networkAccess": {
+        "allowedDomains": [
+            "none"
+        ]
+    }
+}
